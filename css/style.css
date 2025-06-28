@@ -157,22 +157,27 @@ button {
             display: flex;  
             margin-left: 10px;
          }
-        nav .menu {
-            display: none;
-            flex-direction: column;
-            background-color: rgba(255 ,255 ,255 , 0.2);
-            backdrop-filter: blur(2px);
-            position: absolute;
-            top: 50px;
-            color: black;
-            left: 50px;
-          
-            right: 0;
-            margin-top: 40px;
-            padding: 20px;
-            text-align: center;
-            z-index: 1000;
-        }
+                 .close_button {
+                     position: relative;
+                     right: 90px;
+                     top: -60px;
+                     z-index: 1000;
+                 }
+                                 nav .menu {
+                                     display: none;
+                                     flex-direction: column;
+                                     background-color: rgba(255, 255, 255, 0.2);
+                                     backdrop-filter: blur(2px);
+                                     position: absolute;
+                                     top: -20px;
+                                     color: black;
+                                     right: 0px;
+                                     width: 120px;
+                                     padding: 20px;
+                                     text-align: center;
+                                     z-index: 1000;
+                                     height: 100%;
+                                 }
         .nav_bar .menu.active {
             display: block;
             
@@ -182,6 +187,8 @@ button {
             color: black;
             margin-top: 1px;
         }
+                nav  li a:hover {
+                    background-color: rgba(255, 200, 0, 0.3)       }
 }
 @media(min-width: 768px) {
     #icon {
@@ -204,9 +211,9 @@ button {
         font-size: 16px;
         line-height: 18px;
     }
-    button {
-        width: 150px;
-        height: 35px;
-        font-size: 14px;
+        button {
+            width: 150px;
+            height: 35px;
+            font-size: 14px;
+        }
     }
-}
