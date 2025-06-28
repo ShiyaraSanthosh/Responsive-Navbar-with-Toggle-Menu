@@ -1,0 +1,160 @@
+/* :root {
+    --primary--color: white;
+    --secondary--color: black;
+} */
+
+
+body {
+
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 30px;
+
+}
+
+.nav_bar {
+    display: flex;
+    height: 12%;
+    align-items: center;
+}
+
+#logo {
+    max-width: 80px;
+    margin-top: 30px;
+    cursor: pointer;
+ 
+}
+
+#light {
+   
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.col1 {
+    margin-top: 110px;
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
+}
+
+p {
+    font-size: 18px;
+    line-height: 19px;
+    max-width: 700px;
+    color: white
+}
+
+button {
+    width: 180px;
+    height: 40px;
+    background-color:white;
+    /* Green */
+    border: none;
+    color: var(--primary--color);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+
+.col2 {
+    margin-top: 100px;
+}
+
+.card {
+    margin-top: 10px;
+   
+    max-width: 300px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card1 {
+    background-image: url(../images/pic-1.png);
+}
+
+.card2 {
+    background-image: url(../images/pic-2.png);
+
+}
+
+.card3 {
+    background-image: url(../images/pic-3.png);
+
+}
+
+.card4 {
+    background-image: url(../images/pic-4.png);
+
+}
+
+.card_1,
+.card_2 {
+    display: flex;
+    gap: 20px;
+
+
+
+
+
+}
+@media(max-width: 767px) {
+    #icon {
+            display: flex;  
+         }
+        nav .menu {
+            display: none;
+        }
+        .nav_bar .menu.active {
+            display: block;
+
+        }
+}
+@media(min-width: 768px) {
+    #icon {
+        display: none;
+    }
+}
