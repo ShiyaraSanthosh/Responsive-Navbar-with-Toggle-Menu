@@ -62,7 +62,7 @@ nav a {
     color: white;
 }
 nav a:hover {
-    background-color: #f0f0f0;
+    background-color: rgba(255, 200, 0, 0.3)
 }
 
 
@@ -155,6 +155,7 @@ button {
 @media(max-width: 767px) {
     #icon {
             display: flex;  
+            margin-left: 10px;
          }
         nav .menu {
             display: none;
@@ -179,6 +180,7 @@ button {
         }
         nav li a {
             color: black;
+            margin-top: 1px;
         }
 }
 @media(min-width: 768px) {
